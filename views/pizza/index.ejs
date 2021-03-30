@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaMenu</title>
+</head>
+<body>
+    <h1>Pizza Menu</h1>
+    <ul>
+        <% for (let pizza of pizzas){%>
+            <li>
+                <img src='<%= pizza.pizzaImgUrl %>' width="100">
+                <br>
+                <%= pizza.title %>
+                <%= %>
+                <ul>
+                    <li><%= pizza.type %></li>
+                    <li><%= pizza.description %></li>
+                </ul>
+            </li>
+        <%}%>
+    </ul>
+</body>
+</html>
